@@ -1,9 +1,35 @@
 <html>
   <head>
-    <title>My blog</title>
+    <title>hello world.</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <main class="home-container">
+      <section class="flex column home-section">
+        <header class="flex row header">
+          <h1 id="title">
+            <span class="orange">hello</span>
+            <span>world.</span>
+          </h1>
+          <nav id="nav" class="flex column">
+            <div id="posts-heading-container" class="flex row">
+              <strong class="body-text">POSTS</strong>
+              <strong id="superscript">[1]</strong>
+            </div>
+            <ul>
+              <li class="body-text">
+                <a href="/blog/te-houtaewa-template.html"
+                  >Te Houtaewa Template</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <img id="face" src="images/face.png" />
+        <h2 id="haere-mai" class="orange">haere mai.</h2>
+      </section>
+    </main>
   </body>
 </html>
