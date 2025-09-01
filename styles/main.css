@@ -200,3 +200,53 @@ a:hover {
 .blog-cntnt {
   gap: 20px;
 }
+
+/* LARGER SCREENS */
+
+@media (min-width: 1920px) {
+  .title span {
+    font-size: 240px;
+    letter-spacing: calc(-240px * 0.03);
+  }
+  .haere-mai {
+    font-size: 120px;
+    letter-spacing: calc(-120px * 0.03);
+  }
+  .body-txt {
+    font-size: 24px;
+  }
+}
+
+/* TABLET & DOWN */
+
+@media (max-width: 1024px) {
+  .title span {
+    font-size: 140px;
+    letter-spacing: calc(-140px * 0.03);
+  }
+  .haere-mai {
+    font-size: 60px;
+    letter-spacing: calc(-60px * 0.03);
+  }
+  .face-home {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+  .title span {
+    font-size: 90px;
+    letter-spacing: calc(-90px * 0.03);
+  }
+  .haere-mai {
+    font-size: 40px;
+    letter-spacing: calc(-40px * 0.03);
+  }
+  .face-home {
+    width: 70px;
+    height: 70px;
+  }
+}
