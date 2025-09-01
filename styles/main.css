@@ -164,39 +164,39 @@ a:hover {
 
 /* BLOG PAGE */
 
-#blog-header {
+.blog-hdr {
   justify-content: space-between;
   align-items: center;
   padding-left: 8px;
   padding-right: 20px;
 }
 
-#face-header {
+.face-hdr {
   width: 80px;
   height: 80px;
 }
 
-#blog-article {
+.blog-artcl {
   width: 80vw;
   gap: 50px;
   margin: 100px auto;
 }
 
-#blog-date {
+.blog-date {
   line-height: 1;
 }
 
-#blog-title {
+.blog-title {
   font-size: 100px;
   letter-spacing: calc(-100px * 0.03);
   line-height: 1;
 }
 
-#blog-subtitle {
+.blog-sub {
   font-size: 34px;
   line-height: 1;
 }
 
-#blog-content {
+.blog-cntnt {
   gap: 20px;
 }
