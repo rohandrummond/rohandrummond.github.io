@@ -178,8 +178,8 @@ a:hover {
 
 .blog-artcl {
   width: 80vw;
-  gap: 50px;
-  margin: 100px auto;
+  gap: 6vh;
+  margin: 15vh auto;
 }
 
 .blog-date {
@@ -215,9 +215,14 @@ a:hover {
   .body-txt {
     font-size: 24px;
   }
+  .blog-artcl {
+    width: 1160px;
+    gap: 5vh;
+    margin: 20vh auto;
+  }
 }
 
-/* TABLET & DOWN */
+/* TABLET & DOWN  */
 
 @media (max-width: 1024px) {
   .title span {
@@ -231,6 +236,13 @@ a:hover {
   .face-home {
     width: 100px;
     height: 100px;
+  }
+  .blog-title {
+    font-size: 80px;
+    letter-spacing: calc(-80px * 0.03);
+  }
+  .blog-sub {
+    font-size: 30px;
   }
 }
 
@@ -248,5 +260,19 @@ a:hover {
   .face-home {
     width: 70px;
     height: 70px;
+  }
+  .blog-artcl {
+    width: 85vw;
+    margin: 15vh auto;
+  }
+  .blog-title {
+    font-size: 50px;
+    letter-spacing: calc(-60px * 0.03);
+  }
+  .blog-sub {
+    font-size: 26px;
+  }
+  .body-txt {
+    font-size: 18px;
   }
 }
