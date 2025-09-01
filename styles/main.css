@@ -123,7 +123,7 @@ a:hover {
 
 #title span {
   display: block;
-  font-size: 200px;
+  font-size: 180px;
   letter-spacing: calc(-200px * 0.03);
   line-height: 0.8;
 }
@@ -133,13 +133,18 @@ a:hover {
 }
 
 #nav {
-  align-items: flex-end;
+  align-items: center;
+  align-self: center;
   gap: 10px;
+  margin-bottom: 50px;
+}
+
+#nav li {
+  text-align: center;
 }
 
 #posts-heading-container {
   gap: 2px;
-  align-items: flex-start;
 }
 
 #superscript {
@@ -147,7 +152,6 @@ a:hover {
 }
 
 #face {
-  align-self: center;
   height: 150px;
   width: 150px;
 }
