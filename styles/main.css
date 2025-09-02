@@ -83,7 +83,7 @@ a:hover {
 
 /* UTIL */
 
-.orng {
+.orange {
   color: var(--orange);
 }
 
@@ -128,7 +128,7 @@ a:hover {
   line-height: 0.8;
 }
 
-#title span:nth-child(2) {
+.title span:nth-child(2) {
   margin-left: 50px;
 }
 
@@ -156,10 +156,23 @@ a:hover {
   height: 150px;
 }
 
+.home-ftr {
+  position: relative;
+  justify-content: flex-end;
+}
+
 .haere-mai {
-  align-self: flex-end;
   font-size: 80px;
   letter-spacing: calc(-80px * 0.03);
+}
+
+.sub-txt {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  font-size: 20px;
+  line-height: 1;
+  z-index: -1;
 }
 
 /* BLOG PAGE */
@@ -212,8 +225,9 @@ a:hover {
     font-size: 120px;
     letter-spacing: calc(-120px * 0.03);
   }
-  .body-txt {
-    font-size: 24px;
+  .sub-txt {
+    bottom: 10px;
+    font-size: 22px;
   }
   .blog-artcl {
     width: 1160px;
@@ -232,6 +246,10 @@ a:hover {
   .haere-mai {
     font-size: 60px;
     letter-spacing: calc(-60px * 0.03);
+  }
+  .sub-txt {
+    bottom: 1px;
+    font-size: 16px;
   }
   .face-home {
     width: 100px;
@@ -256,6 +274,10 @@ a:hover {
   .haere-mai {
     font-size: 40px;
     letter-spacing: calc(-40px * 0.03);
+  }
+  .sub-txt {
+    bottom: 0;
+    font-size: 14px;
   }
   .face-home {
     width: 70px;
