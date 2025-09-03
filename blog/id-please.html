@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ID please</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header class="flex row blog-hdr">
+      <a href="/"><img class="face-hdr" src="../images/face.png" /></a>
+      <nav>
+        <a href="/"><strong class="body-txt">BACK TO HOME</strong></a>
+      </nav>
+    </header>
+    <article class="flex col blog-artcl">
+      <div class="flex col">
+        <strong class="body-txt blog-date">[3 SEPTEMBER 2025]</strong>
+        <h1 class="orange blog-title">ID Please</h1>
+        <h2 class="blog-sub">
+          Best practices associated with using HTML Classes and IDs
+        </h2>
+      </div>
+      <div class="flex col blog-cntnt">
+        <section class="flex col blog-sctn">
+          <h3 class="blog-sctn-head">
+            <strong>WHAT ARE CLASSES AND IDS?</strong>
+          </h3>
+          <p class="body-txt">
+            Whether it’s for developers, browsers or screen readers, part of
+            writing good HTML is describing it’s content. Basic HTML tags can do
+            the trick, but sometimes they aren’t enough for all of the possible
+            elements we have on our pages. We might have a specific
+            <code>&lt;button&gt;</code>
+            element that needs to trigger a custom JavaScript function, or a
+            <code>&lt;p&gt;</code> element that needs to look different to the
+            rest of the <code>&lt;p&gt;</code> elements on a page - this is
+            where HTML id and class attributes are helpful.
+          </p>
+          <p class="body-txt">
+            Multiple HTML elements can share the same class, and the same
+            element can have multiple classes.
+            <a
+              href="https://www.w3schools.com/html/html_classes.asp"
+              target="_blank"
+              >W3Schools</a
+            >
+            describes the class attribute as something that is often used to
+            point to a class name in a CSS style sheet. It can also be used by a
+            JavaScript to access and manipulate elements with the specific class
+            name.
+          </p>
+          <p class="body-txt">
+            In contrast to the class attribute, you cannot have more than one
+            element with the same id in an HTML document, and elements can only
+            have a single id value. They can also be used to point to a specific
+            style in a CSS document, but are more commonly used by JavaScript to
+            access and manipulate the elements (more on this later).
+          </p>
+        </section>
+
+        <section class="flex col blog-sctn">
+          <h3 class="blog-sctn-head"><strong>NAMING CONVENTION</strong></h3>
+          <p class="body-txt">
+            There are a range of different naming conventions for ids and
+            classes, some based on technical limitations and some on personal
+            opinions.
+          </p>
+          <ul class="flex col blog-list">
+            <li class="body-txt">
+              Classes cannot contain whitespace characters, otherwise browsers
+              will treat them as two seperate classes.
+            </li>
+            <li class="body-txt">
+              Ids should also not contain whitespace characters. browsers treat
+              this as if the whitespace is part of the id which means they have
+              to be escaped manually in CSS and JavaScript (something that is
+              not best practice).
+            </li>
+            <li class="body-txt">
+              Technically ids and classes can contain any other Unicode
+              characters. However when using CSS selectors in stylesheets or
+              JavaScript APIs like <code>Document.querySelector()</code>, the id
+              and class attributes must be valid CSS identifiers. To avoid
+              issues it is best practice to name ids and classes in-line with
+              valid CSS identifiers, you can read more about valid CSS
+              identifiers with examples
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/ident#syntax"
+                target="_blank"
+                >here.</a
+              >
+            </li>
+            <li class="body-txt">
+              While this isn’t a technical requirement, web developers are
+              encouraged to use names that describe the semantic purpose of the
+              element. For example, instead of using generic names like
+              <code>div1</code> or <code>element2</code>, opt for more
+              descriptive names like <code>header-section</code> or
+              <code>submit-button</code>.
+            </li>
+            <li class="body-txt">
+              While there are differing opinions on how to format names, the
+              general consensus is to use lowercase letters with hyphens e.g.
+              <code>main-content</code> (also called kebab-case). However some
+              developers may use <code>snake_case</code>,
+              <code>camelCase</code>, or methodologies like
+              <a href="https://getbem.com/" target="_blank">BEM</a> in larger
+              projects.
+            </li>
+          </ul>
+        </section>
+
+        <section class="flex col blog-sctn">
+          <h3 class="blog-sctn-head"><strong>BUT WHEN</strong></h3>
+          <p class="body-txt">
+            Although there are mixed opinions, the general rule is to use
+            classes for styling and ids for functionality. When I first started
+            learning how to code, there was so much information to take in that
+            I just followed what everyone else was doing, and didn’t take the
+            time to properly research the “why” until now. There are 3 key
+            reasons for this:
+          </p>
+          <ul class="flex col blog-list">
+            <li class="body-txt">
+              Classes are reusable and flexible (just because an element starts
+              out unique, it may not stay that way)
+            </li>
+            <li class="body-txt">
+              Ids have a higher CSS specificity than classes, making them harder
+              to override which can cause problems in larger
+              stylesheets/codebases
+            </li>
+            <li class="body-txt">
+              Styling everything with classes means developers don’t need to
+              constantly stop and decide whether it is appropriate to include
+              something as an id or class.
+            </li>
+          </ul>
+          <p class="body-txt">
+            This begs the question of when it is appropriate to use ids:
+          </p>
+          <ul class="flex col blog-list">
+            <li class="body-txt">
+              When you want to target something with JavaScript e.g.
+              <code>document.getElementById()</code>
+            </li>
+            <li class="body-txt">
+              When you want to add an id fragment to an element so that you can
+              navigate to it via a URL
+              <code>e.g .../page#my-section-id</code>
+            </li>
+            <li class="body-txt">
+              For form functionality and accessibility e.g. giving an
+              <code>&lt;input&gt;</code> element an <code>id</code>, so a
+              <code>&lt;label&gt;</code> element can point to it using the
+              <code>for</code> attribute
+            </li>
+          </ul>
+          <p class="body-txt">
+            With a few exceptions, I think it can be boiled down to this simple
+            quote from a user on
+            <a
+              href="https://www.reddit.com/r/learnprogramming/comments/11rgz7q/id_vs_class_in_css/"
+              target="_blank"
+              >Reddit</a
+            >
+            - “In general I use classes for everything and IDs only when I need
+            to interact with an element using js”.
+          </p>
+        </section>
+
+        <section class="flex col blog-sctn">
+          <h3 class="blog-sctn-head"><strong>WHY?</strong></h3>
+          <p class="body-txt">
+            Understanding when and how to use ids and classes is key to writing
+            clean HTML that integrates seamlessly with additional CSS and
+            JavaScript. By sticking to consistent naming conventions and clear
+            use cases, we can facilitate cleaner and more maintainable
+            codebases.
+          </p>
+        </section>
+      </div>
+    </article>
+  </body>
+</html>

@@ -211,7 +211,36 @@ a:hover {
 }
 
 .blog-cntnt {
-  gap: 20px;
+  gap: 50px;
+}
+
+.blog-sctn {
+  gap: 12px;
+}
+
+.blog-sctn-head {
+  margin-bottom: 12px;
+}
+
+.blog-list {
+  gap: 6px;
+  margin-left: 30px;
+}
+
+.blog-list li {
+  list-style: square;
+}
+
+.blog-cntnt a {
+  text-decoration: underline;
+}
+
+.blog-cntnt code {
+  background-color: #4a4a4a;
+  color: var(--off-white);
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 5px;
 }
 
 /* LARGER SCREENS */
