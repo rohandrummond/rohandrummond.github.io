@@ -236,8 +236,7 @@ a:hover {
 }
 
 .blog-cntnt code {
-  background-color: #4a4a4a;
-  color: var(--off-white);
+  background-color: #dcdcdc;
   font-size: 14px;
   padding: 2px 6px;
   border-radius: 4px;
