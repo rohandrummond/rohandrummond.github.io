@@ -243,6 +243,13 @@ a:hover {
   border-radius: 4px;
 }
 
+.blog-img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 28px;
+}
+
 /* LARGER SCREENS */
 
 @media (min-width: 1920px) {
@@ -291,6 +298,9 @@ a:hover {
   .blog-sub {
     font-size: 30px;
   }
+  .blog-img {
+    max-width: 75%;
+  }
 }
 
 /* MOBILE */
@@ -325,5 +335,8 @@ a:hover {
   }
   .body-txt {
     font-size: 18px;
+  }
+  .blog-img {
+    max-width: 100%;
   }
 }
