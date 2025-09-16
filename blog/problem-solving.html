@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <title>We got a problem</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="flex row blog-hdr">
+      <a href="/"
+        ><img
+          class="face-hdr"
+          src="../images/face.png"
+          alt="Rohan face cartoon"
+      /></a>
+      <nav>
+        <a href="/"><strong class="body-txt">BACK TO HOME</strong></a>
+      </nav>
+    </header>
+    <!-- ARTICLE -->
+    <article class="flex col blog-artcl">
+      <!-- DATE, TITLE & SUBTITLE -->
+      <div class="flex col">
+        <strong class="body-txt blog-date">[16 SEPTEMBER 2025]</strong>
+        <h1 class="orange blog-title">We got a problem</h1>
+        <h2 class="blog-sub">
+          Reflecting on problem-solving experiences and techniques
+        </h2>
+      </div>
+      <!-- CONTENT -->
+      <div class="flex col blog-cntnt">
+        <!-- INTRO -->
+        <section class="flex col blog-sctn">
+          <p class="body-txt">
+            "Problem-solving skills" is a buzzword that's probably on every
+            developer resume on earth. It's important that we learn how to turn
+            this ambigious concept into something more methodical and actionable
+            for ourselves as developers.
+          </p>
+        </section>
+        <!-- SECTION 1: SIMPLE PROBLEM -->
+        <section class="flex col blog-sctn">
+          <h3 class="blog-sctn-head">
+            <strong>KEEP IT SIMPLE STUPID 🤨</strong>
+          </h3>
+          <p class="body-txt">
+            Ah yes, nothing like your function being completely correct except
+            for 1 missing keyword. In one of the JavaScript Kata exercises, all
+            of the logic in my function was working, except for the fact that it
+            wasn't returning the value that I had so carefully prepared for it.
+            Thankfully for the <code>test.js</code> file for that exercise, I
+            was quickly able to figure out the solution i.e. adding
+            <code>return</code> before my variable 🤯 It's funny how simple the
+            solution is sometimes, and it really speaks to how important proper
+            testing and error logging are.
+          </p>
+        </section>
+        <!-- SECTION 2: ELEGANT SOLUTION -->
+        <section class="flex col blog-sctn">
+          <h3 class="blog-sctn-head">
+            <strong>DON'T JUST MAKE IT WORK 🔨</strong>
+          </h3>
+          <p class="body-txt">
+            In the JavaScript Kata repo, there was a stretch exercise in the
+            Gradebook section. It essentially combined 2 separate solutions from
+            previous exercises in the section. At first I just copied and pasted
+            them in and the tests were passing, but I had a feeling that there
+            was a more efficient way to solve the problem. Long story short
+            turns out there was a way to combine the 2 functions into a single
+            solution. It really taught me the importance of refactoring your
+            code after writing the initial approach. After reviewing things for
+            a second time, there are often efficiencies you spot that might not
+            have seemed obvious at first.
+          </p>
+        </section>
+        <!-- SECTION 3: TECHNIQUES REFLECTION -->
+        <section class="flex col blog-sctn">
+          <h3 class="blog-sctn-head">
+            <strong>TECHNIQUES & STRATEGIES 💪</strong>
+          </h3>
+          <p class="body-txt">
+            I'm confident will all of the problem-solving techniques we have
+            learnt about so far. But by far my most used techniques are console
+            logging, error messages, Googling and pseudocode. In saying that I
+            think there's always an added level of discomfort when you're
+            reaching out to peers or coaches for help, since it feels like you
+            might be judged for asking a 'stupid' question. It's also a tricky
+            situation because a lot of people in the industry talk about the
+            importance of juniors trying to figuring something out for
+            themselves, but that also needs to be balanced with recognising when
+            you genuinely need help. I haven't felt the need to ask for help
+            just yet, but when I do I'll probably need to give myself a bit of a
+            pep talk and remind myself that it's fine to ask questions.
+          </p>
+        </section>
+        <!-- SECTION X: ASKING FOR HELP -->
+        <section class="flex col blog-sctn">
+          <h3 class="blog-sctn-head">
+            <strong>PLS HELP 😭</strong>
+          </h3>
+          <p class="body-txt">
+            Earlier in Foundations I was receiving a warning when opening my
+            terminal <code>npm warn Unknown user config "python"</code>. I've
+            been using npm for a while and had never had that warning appear,
+            but since I followed the Dev Academy setup instructions I decided
+            that I would just leave it since it wasn't causing any issues. A few
+            other students posted about it and the issue was solved, and
+            hopefully instructions are updated for future cohorts. In hindsight
+            I should have just asked about it since other people were having the
+            same problem!
+          </p>
+        </section>
+      </div>
+    </article>
+  </body>
+</html>
