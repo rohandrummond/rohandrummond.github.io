@@ -121,10 +121,6 @@ a:hover {
   justify-content: space-between;
 }
 
-.home-hdr {
-  justify-content: space-between;
-}
-
 .title span {
   display: block;
   font-size: 180px;
@@ -161,32 +157,11 @@ a:hover {
   height: 150px;
 }
 
-.home-ftr {
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.home-ftr-menu {
-  gap: 20px;
-}
-
-.home-ftr-link {
-  font-size: 20px;
-  line-height: 100%;
-}
-
-.home-ftr-sub-text {
-  font-size: 16px;
-  line-height: 100%;
-}
-
-.haere-mai {
-  font-size: 80px;
-  letter-spacing: calc(-80px * 0.03);
-  line-height: 100%;
-}
-
 /* HEADER */
+
+.home-hdr {
+  justify-content: space-between;
+}
 
 .hdr {
   justify-content: space-between;
@@ -200,7 +175,44 @@ a:hover {
   height: 80px;
 }
 
-/* ALL BLOG POSTS PAGE */
+/* FOOTER */
+
+.ftr {
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 50px 25px 25px 25px;
+}
+
+.ftr-menu {
+  gap: 30px;
+}
+
+.ftr-link {
+  font-size: 20px;
+  line-height: 100%;
+}
+
+.ftr-sub-text {
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.home-ftr {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.home-ftr-menu {
+  gap: 20px;
+}
+
+.haere-mai {
+  font-size: 80px;
+  letter-spacing: calc(-80px * 0.03);
+  line-height: 100%;
+}
+
+/* POSTS PAGE */
 
 .posts-ctr {
   padding: 100px 25px;
@@ -233,7 +245,7 @@ a:hover {
   text-decoration: none;
 }
 
-/* INDIVIDUAL BLOG PAGE */
+/* POSTS (INDIVIDUAL) PAGEs */
 
 .blog-artcl {
   width: 80vw;
@@ -335,10 +347,13 @@ a:hover {
     width: 100px;
     height: 100px;
   }
-  .home-ftr-link {
+  .ftr-menu {
+    gap: 20px;
+  }
+  .ftr-link {
     font-size: 18px;
   }
-  .home-ftr-sub-text {
+  .ftr-sub-text {
     font-size: 14px;
   }
   .post-grid {
@@ -357,6 +372,9 @@ a:hover {
 }
 
 @media (max-width: 750px) {
+  .ftr-menu {
+    gap: 14px;
+  }
   .post-grid {
     grid-template-columns: 1fr;
   }
@@ -377,9 +395,20 @@ a:hover {
     width: 70px;
     height: 70px;
   }
+  .ftr {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
   .home-ftr {
     flex-direction: column-reverse;
     align-items: center;
+  }
+  .ftr-menu {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
   }
   .home-ftr-menu {
     width: 100%;
@@ -387,7 +416,7 @@ a:hover {
     align-items: flex-end;
     justify-content: space-between;
   }
-  .home-ftr-link {
+  .ftr-link {
     font-size: 16px;
   }
   .haere-mai {
